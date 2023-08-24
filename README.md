@@ -1,3 +1,5 @@
+# Magic Translate Next.js Example App
+
 This is an example React (Next.js) app to with Magic Translate integrated.
 
 ## Getting Started
@@ -12,7 +14,6 @@ Then copy your API key and set it in your `env.local` file:
 
 NEXT_PUBLIC_MAGIC_TRANSLATE_API_KEY=<your API key>
 ```
-
 
 Then, run the development server:
 
