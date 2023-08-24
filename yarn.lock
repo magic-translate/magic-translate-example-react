@@ -51,11 +51,28 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@magic-translate/react@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@magic-translate/react/-/react-1.6.0.tgz#6f70153bef076a91a0c90ed8b7e4182ca66f74c6"
-  integrity sha512-nDkG/hqSpMsgm/eFs5ZQAF1ve86wE02H1O/nwpjPUMc9G8st14VU4CUvil3WwSYzjt+Uuc9aCFKRb2c3ne/Y+Q==
+"@magic-translate/core@^1.0.1", "@magic-translate/core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@magic-translate/core/-/core-1.1.0.tgz#23f1741e529711b823189025c32c16eacb350bdd"
+  integrity sha512-qi2+YtV06Ssxf5ecIUUJHsy07EMJz9l9avm6tK77w7j++I+PkjiGyvFNILWNxMTl1yQAthDs7xRboCJn8453WQ==
   dependencies:
+    dataloader "^2.1.0"
+
+"@magic-translate/react-ssr@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@magic-translate/react-ssr/-/react-ssr-1.0.2.tgz#e9aa63db9c222c3d563b92bbdf087fe7c538647e"
+  integrity sha512-4Mho9dY3zizbUnSp67aXg53RcQClypyprGWu2SDE4uiIOJz7ekIRxlkm9eI9ys2eXSAIod96UlaLZbzXqGjVXw==
+  dependencies:
+    "@magic-translate/core" "^1.1.0"
+    dataloader "^2.1.0"
+    html-react-parser "^4.2.1"
+
+"@magic-translate/react@^1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@magic-translate/react/-/react-1.14.0.tgz#7c942c65830d16bf9f468ab06d43581fe55d682a"
+  integrity sha512-TF0sPVeFs5gS6RxvVNvTTJNNGNYMm/KDAGL7xLs31j+FgtpLneALQ1lKWJTl6yrSrPpYVSPc/1iepDLvk6JEOA==
+  dependencies:
+    "@magic-translate/core" "^1.0.1"
     dataloader "^2.1.0"
     html-react-parser "^3.0.4"
 
@@ -336,7 +353,7 @@ domhandler@5.0.3, domhandler@^5.0.2, domhandler@^5.0.3:
   dependencies:
     domelementtype "^2.3.0"
 
-domutils@^3.0.1:
+domutils@^3.0.1, domutils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-3.1.0.tgz#c47f551278d3dc4b0b1ab8cbb42d751a6f0d824e"
   integrity sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==
@@ -350,7 +367,7 @@ electron-to-chromium@^1.4.431:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.433.tgz#305ef5f8ea5fe65d252aae4b0e1088f9e4842533"
   integrity sha512-MGO1k0w1RgrfdbLVwmXcDhHHuxCn2qRgR7dYsJvWFKDttvYPx6FNzCGG0c/fBBvzK2LDh3UV7Tt9awnHnvAAUQ==
 
-entities@^4.2.0, entities@^4.4.0:
+entities@^4.2.0, entities@^4.4.0, entities@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-4.5.0.tgz#5d268ea5e7113ec74c4d033b79ea5a35a488fb48"
   integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
@@ -464,6 +481,14 @@ html-dom-parser@3.1.7:
     domhandler "5.0.3"
     htmlparser2 "8.0.2"
 
+html-dom-parser@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-4.0.0.tgz#dc382fbbc9306f8c9b5aae4e3f2822e113a48709"
+  integrity sha512-TUa3wIwi80f5NF8CVWzkopBVqVAtlawUzJoLwVLHns0XSJGynss4jiY0mTWpiDOsuyw+afP+ujjMgRh9CoZcXw==
+  dependencies:
+    domhandler "5.0.3"
+    htmlparser2 "9.0.0"
+
 html-react-parser@^3.0.4:
   version "3.0.16"
   resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-3.0.16.tgz#bdd535a7730683c6d0ec60e7493e5d7a5463c8ca"
@@ -471,6 +496,16 @@ html-react-parser@^3.0.4:
   dependencies:
     domhandler "5.0.3"
     html-dom-parser "3.1.7"
+    react-property "2.0.0"
+    style-to-js "1.1.3"
+
+html-react-parser@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.1.tgz#5fcccc9d7d61ef145c6a0c69c6531094188d9682"
+  integrity sha512-Dxzdowj5Zu/+7mr8X8PzCFbPXGuwCwGB2u4cB6oxZGES9inw85qlvnlfPD75VGKUGjcgsXs+9Dpj+THWNQyOBw==
+  dependencies:
+    domhandler "5.0.3"
+    html-dom-parser "4.0.0"
     react-property "2.0.0"
     style-to-js "1.1.3"
 
@@ -483,6 +518,16 @@ htmlparser2@8.0.2:
     domhandler "^5.0.3"
     domutils "^3.0.1"
     entities "^4.4.0"
+
+htmlparser2@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-9.0.0.tgz#e431142b7eeb1d91672742dea48af8ac7140cddb"
+  integrity sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==
+  dependencies:
+    domelementtype "^2.3.0"
+    domhandler "^5.0.3"
+    domutils "^3.1.0"
+    entities "^4.5.0"
 
 inflight@^1.0.4:
   version "1.0.6"
