@@ -1,6 +1,7 @@
 # Magic Translate Next.js Example App
 
-This is an example React (Next.js) app to with Magic Translate integrated.
+This is an example React (Next.js) app to with Magic Translate integrated. You can see this app deployed 
+here: https://magic-translate-example-react.vercel.app/
 
 ## Getting Started
 
