@@ -1,11 +1,11 @@
 # Magic Translate Next.js Example App
 
-This is an example React (Next.js) app to with Magic Translate integrated. You can see this app deployed 
+This is an example React (Next.js) app with Magic Translate integrated. You can see this app deployed 
 here: https://magic-translate-example-react.vercel.app/
 
 ## Getting Started
 
-First [create a Magic Translate account](https://magictranslate.io/signin) at https://magictranslate.io/signin to obtain your API key. 
+First create a Magic Translate account at https://magictranslate.io/signin to obtain your API key.
 No credit card is required for the Free plan.
 
 Then copy your API key and set it in your `env.local` file:
