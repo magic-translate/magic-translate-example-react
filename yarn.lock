@@ -51,10 +51,17 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@magic-translate/core@^1.0.1", "@magic-translate/core@^1.1.0":
+"@magic-translate/core@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@magic-translate/core/-/core-1.1.0.tgz#23f1741e529711b823189025c32c16eacb350bdd"
   integrity sha512-qi2+YtV06Ssxf5ecIUUJHsy07EMJz9l9avm6tK77w7j++I+PkjiGyvFNILWNxMTl1yQAthDs7xRboCJn8453WQ==
+  dependencies:
+    dataloader "^2.1.0"
+
+"@magic-translate/core@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@magic-translate/core/-/core-1.2.1.tgz#402cb4941c7687524ffa578da751f2b1c23bd225"
+  integrity sha512-Z8ECqdvOhXi8UMvJC95+ufJaYJBz2hNrW/RAsJ9Md4J5slixcDmQdoI1r6q+s81g7mSt15hGBZg6I1LhIiU5lw==
   dependencies:
     dataloader "^2.1.0"
 
@@ -67,12 +74,12 @@
     dataloader "^2.1.0"
     html-react-parser "^4.2.1"
 
-"@magic-translate/react@^1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@magic-translate/react/-/react-1.14.0.tgz#7c942c65830d16bf9f468ab06d43581fe55d682a"
-  integrity sha512-TF0sPVeFs5gS6RxvVNvTTJNNGNYMm/KDAGL7xLs31j+FgtpLneALQ1lKWJTl6yrSrPpYVSPc/1iepDLvk6JEOA==
+"@magic-translate/react@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@magic-translate/react/-/react-1.15.1.tgz#273e4d044bcaef07cf49b4f54b75cb98bfe2f296"
+  integrity sha512-JIgTQxc/qyHwARvRGBYHIFV/6uoOYBprHBLLqfwXoNL06UxU6WFm4z44h+fE64408+nSE0OapXUh5Io9/rCdwA==
   dependencies:
-    "@magic-translate/core" "^1.0.1"
+    "@magic-translate/core" "^1.2.1"
     dataloader "^2.1.0"
     html-react-parser "^3.0.4"
 
