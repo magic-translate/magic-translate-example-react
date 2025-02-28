@@ -9,10 +9,11 @@ import { Language } from "@magic-translate/react";
 const T = createT(translate);
 
 export default async ({
-  params: { language },
+  params,
 }: {
-  params: { language: AvailableLanguages };
+  params: Promise<{ language: AvailableLanguages }>;
 }) => {
+  const { language } = await params;
   return (
     <>
       <GetStarted>
@@ -23,7 +24,7 @@ export default async ({
       </GetStarted>
 
       <div className="flex justify-center">
-        <ul className="text-sm font-medium text-gray-900 border border-gray-200 rounded-lg sm:flex dark:border-gray-600 dark:text-white rounded-lg overflow-hidden">
+        <ul className="text-sm font-medium text-gray-900 border border-gray-200 rounded-lg sm:flex dark:border-gray-600 dark:text-white overflow-hidden">
           {Object.entries(languages).map(([lang, languageName]) => (
             <li
               key={lang}
