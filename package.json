@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.0",
-    "@magic-translate/react": "^1.16.0",
-    "@magic-translate/react-ssr": "^1.0.2",
+    "@magic-translate/react": "^1.17.1",
+    "@magic-translate/react-ssr": "^1.1.0",
     "@types/node": "20.3.1",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
